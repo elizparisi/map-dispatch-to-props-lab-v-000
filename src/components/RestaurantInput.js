@@ -25,7 +25,7 @@ export class RestaurantInput extends Component {
     event.preventDefault();
     // add missing code
     const restaurant = this.state;
-    
+    this.props.addRestaurant(this.state);
   }
 
   render() {
