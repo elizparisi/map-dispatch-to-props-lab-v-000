@@ -15,4 +15,4 @@ export class App extends Component {
   }
 };
 
-export default connect({addRestaurant})(App);
+export default connect(state => ({ restaurants: state.restaurants }), {addRestaurant})(App);
